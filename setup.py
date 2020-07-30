@@ -30,7 +30,7 @@ setup(
     ],
     dependency_links=[],
     description="This is a package containing a dummy service, mad. Here, we can explore the functionalities of the libraries we will use to develop wrapper services for different functional areas within Anmut (data condition, assurance reporting, market data valuation, etc.).  ",
-    install_requires=[],
+    install_requires=["flask", "flask-sqlalchemy", "flask-migrate"],
     long_description=readme + "\n\n" + history,
     include_package_data=True,
     keywords="dummy_service",
