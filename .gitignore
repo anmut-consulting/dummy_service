@@ -159,6 +159,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# locally created databases:
+*.db
+
 # Jupyter notebooks - add manually as needed
 *.ipynb
 
