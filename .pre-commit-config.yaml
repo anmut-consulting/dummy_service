@@ -66,20 +66,20 @@ repos:
     types: [python]
     require_serial: true
 
-  - id: pytest
-    name: pytest
-    language: system
-    entry: pipenv run pytest
-    types: [python]
-    pass_filenames: false
+  # - id: pytest
+  #   name: pytest
+  #   language: system
+  #   entry: pipenv run pytest
+  #   types: [python]
+  #   pass_filenames: false
 
-  - id: pytest-cov
-    name: "pytest coverage"
-    stages: [push]
-    language: system
-    entry: pipenv run pytest --cov --cov-fail-under=100 --cov-report term-missing:skip-covered
-    types: [python]
-    pass_filenames: false
+  # - id: pytest-cov
+  #   name: "pytest coverage"
+  #   stages: [push]
+  #   language: system
+  #   entry: pipenv run pytest --cov --cov-fail-under=100 --cov-report term-missing:skip-covered
+  #   types: [python]
+  #   pass_filenames: false
 
   - id: pipenv-update-lock
     name: "Update pipfile.lock"
